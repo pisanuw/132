@@ -47,6 +47,7 @@ void load(int loadMemory[SIZE], const string &filename) {
     infile >> discard_memory_address >> instruction;
     getline(infile, discard_comments);
   }
+  infile.close();
 }
 
 void readCommand(int memory[SIZE], int operand) {
